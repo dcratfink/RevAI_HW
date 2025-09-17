@@ -8,4 +8,4 @@ const PatientSchema = new mongoose.Schema({
     condition: { type: String, required: false, default: "unknown" },
 });
 
-module.exports = mongoose.model('Action', PatientSchema);
+module.exports = mongoose.model('Patient', PatientSchema);
