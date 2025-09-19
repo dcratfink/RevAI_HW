@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
 
 const ConditionalSchema = new mongoose.Schema({
-    id: { type: Number, required: true, unique: true },
-    node_type: 'CONDITIONAL',
+     node_type: 'CONDITIONAL',
         condition: {
-            field: field,
-            operator: operator,
-            value: value        },
-        on_true_next_node_id: { type: Number, required: false, default: 0 },
-        on_false_next_node_id: { type: Number, required: false, default: 0 },
+            field: { type: String, required: false, default: "" },
+            operator: { type: String, required: false, default: "" },
+            value: { type: String, required: false, default: "" },
+        },
+        on_true_next_node_id: { type: Number, required: false, default: null },
+        on_false_next_node_id: { type: Number, required: false, default: null },
 });
 
-module.exports = mongoose.model('Conditional', ConditionalSchema);
+module.exports = mongoose.model('conditional', ConditionalSchema);

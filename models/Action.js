@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 
 const ActionSchema = new mongoose.Schema({
-    id: { type: Number, required: true, unique: true },
     message:  { type: String, required: false, default: "" },
-    next_node_id: { type: Number, required: false, default: null },
-    node_type: "MESSAGE",
+    nextNodeId: { type: Number, required: false, default: null },
+    nodeType: "MESSAGE",
 });
 
-module.exports = mongoose.model('Action', ActionSchema);
+module.exports = mongoose.model('action', ActionSchema);
