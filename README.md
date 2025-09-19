@@ -31,6 +31,11 @@ II. Current Status:
      and simplicity.  Current reordering structure of the project to include the 
      models and service layer for the api.
 
+     Update (12/19/2025):  Updated all model objects, removed id fields, change case 
+     to camel case and modified most default values.  Added a sql folder. The
+     sql script in it is just to initialize the mongodb with the schemas/collections.
+     Included some initial collections for each type.
+
 III.  Developer Contacts:
         ricky.raymond.ratliff@gmail.com
         ricky.ratliff@dcratfink.com
