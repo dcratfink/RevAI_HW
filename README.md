@@ -36,6 +36,13 @@ II. Current Status:
      sql script in it is just to initialize the mongodb with the schemas/collections.
      Included some initial collections for each type.
 
+     Update (09/23/2025): Working version of app.js using journey routes.  Began removing
+     garbage code I copied over from AI & other tools.
+
+     Created the 3 endpoints to simulate running (creating a journey, triggering a run, get a status)
+
+     Cleaned up code
+
 III.  Developer Contacts:
         ricky.raymond.ratliff@gmail.com
         ricky.ratliff@dcratfink.com
