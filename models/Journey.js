@@ -7,4 +7,4 @@ const JourneySchema = new mongoose.Schema({
     journeyNodes: { type: Array, required: true, default: [] },
 });
 
-module.exports = mongoose.model('journeys', JourneySchema);
+module.exports = mongoose.model('journey', JourneySchema);
