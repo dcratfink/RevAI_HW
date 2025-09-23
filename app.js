@@ -14,6 +14,7 @@ mongoose.connect('mongodb://localhost:27017/RevelAI_HW', {
 }).catch(err => {
     console.error('Could not connect to MongoDB...', err);
 });
+
 console.log("MongoDB Successfully Connected!");
 
 app.use(express.json());
